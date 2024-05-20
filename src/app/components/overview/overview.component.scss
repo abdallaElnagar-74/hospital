@@ -1,0 +1,66 @@
+.top{
+    h1{
+        font-size: 50px;
+        font-weight: 400;
+        font-family: "Katibeh", serif;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1);
+    }
+}
+.cobe{
+    background-color:rgba(19, 75, 184, 1);
+    h1{
+        font-family: "Inika", serif;
+        font-size: 33px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+    }
+    p{
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+.ikon{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 220, 220, 1);
+}
+.ikon1{
+    width: 60px;
+    height: 60px;
+   background-color: rgba(221, 231, 255, 1);
+   color: rgba(75, 91, 144, 1) !important;
+}
+.ikon2{
+    width: 60px;
+    height: 60px;
+   background-color: rgba(255, 236, 222, 1);
+   color: rgba(167, 87, 42, 1) !important;
+}
+.ikon3{
+    width: 60px;
+    height: 60px;
+   background-color: rgba(200, 239, 197, 1);
+   color: rgba(167, 87, 42, 1) !important;
+}
+.cardd{
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        transform: translateY(35%);
+    }
+}
+.dname{
+    font-size: 13px;
+    font-weight: 500;
+    transform: translateY(10px)
+}
+.fa-circle-arrow-left,.fa-circle-arrow-right{
+    color: rgba(100, 141, 99, 1);
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}

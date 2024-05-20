@@ -1,0 +1,533 @@
+[
+    {
+      "type": "header",
+      "version": "5.2.1",
+      "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+      "type": "database",
+      "name": "HIS"
+    },
+    {
+      "type": "table",
+      "name": "Appointment",
+      "database": "HIS",
+      "data": [
+        {
+          "patient_id": "P001",
+          "Doctor_FName": "James",
+          "Doctor_LName": "Doe",
+          "doctor_id": "D001",
+          "date": "2024-06-01",
+          "time": "09:00:00"
+        },
+        {
+          "patient_id": "P002",
+          "doctor_id": "D002",
+          "Doctor_FName": "Susan",
+          "Doctor_LName": "Clark",
+          "date": "2024-06-01",
+          "time": "10:30:00"
+        },
+        {
+          "patient_id": "P003",
+          "doctor_id": "D003",
+          "Doctor_FName": "Tom",
+          "Doctor_LName": "Walker",
+          "date": "2024-06-01",
+          "time": "11:00:00"
+        },
+        {
+          "patient_id": "P004",
+          "doctor_id": "D004",
+          "Doctor_FName": "Bob",
+          "Doctor_LName": "Brown",
+          "date": "2024-06-02",
+          "time": "13:00:00"
+        },
+        {
+          "patient_id": "P005",
+          "Doctor_FName": "Alice",
+          "Doctor_LName": "Wilson",
+          "doctor_id": "D005",
+          "date": "2024-06-02",
+          "time": "14:30:00"
+        },
+        {
+          "patient_id": "P006",
+          "doctor_id": "D006",
+          "Doctor_FName": "Jane",
+          "Doctor_LName": "Wilson",
+          "date": "2024-06-03",
+          "time": "15:00:00"
+        },
+        {
+          "patient_id": "P007",
+          "doctor_id": "D007",
+          "Doctor_FName": "James",
+          "Doctor_LName": "Wilson",
+          "date": "2024-06-03",
+          "time": "16:00:00"
+        },
+        {
+          "patient_id": "P008",
+          "doctor_id": "D008",
+          "Doctor_FName": "Doe",
+          "Doctor_LName": "Clark",
+          "date": "2024-06-04",
+          "time": "09:30:00"
+        },
+        {
+          "patient_id": "P009",
+          "Doctor_FName": "James",
+          "Doctor_LName": "Davis",
+          "doctor_id": "D009",
+          "date": "2024-06-04",
+          "time": "10:00:00"
+        },
+        {
+          "patient_id": "P010",
+          "doctor_id": "D010",
+          "Doctor_FName": "Susan",
+          "Doctor_LName": "Brown",
+          "date": "2024-06-05",
+          "time": "11:30:00"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "name": "Department",
+      "database": "HIS",
+      "data": [
+        {
+          "Department_Id": "D001",
+          "Department_Name": "Cardiology",
+          "Hospital_Id": "0001"
+        },
+        {
+          "Department_Id": "D002",
+          "Department_Name": "Neurology",
+          "Hospital_Id": "0002"
+        },
+        {
+          "Department_Id": "D003",
+          "Department_Name": "Pediatrics",
+          "Hospital_Id": "0003"
+        },
+        {
+          "Department_Id": "D004",
+          "Department_Name": "Oncology",
+          "Hospital_Id": "0004"
+        },
+        {
+          "Department_Id": "D005",
+          "Department_Name": "Orthopedics",
+          "Hospital_Id": "0005"
+        },
+        {
+          "Department_Id": "D006",
+          "Department_Name": "Emergency",
+          "Hospital_Id": "0001"
+        },
+        {
+          "Department_Id": "D007",
+          "Department_Name": "Dermatology",
+          "Hospital_Id": "0002"
+        },
+        {
+          "Department_Id": "D008",
+          "Department_Name": "Radiology",
+          "Hospital_Id": "0003"
+        },
+        {
+          "Department_Id": "D009",
+          "Department_Name": "Gastroenterology",
+          "Hospital_Id": "0004"
+        },
+        {
+          "Department_Id": "D010",
+          "Department_Name": "Urology",
+          "Hospital_Id": "0005"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "name": "Doctor",
+      "database": "HIS",
+      "data": [
+        {
+          "Doctor_Id": "D001",
+          "Doctor_FName": "John",
+          "Doctor_LName": "Doe",
+          "Department_Id": "D001",
+          "Doctor_Phone_Number": "555-123-4567"
+        },
+        {
+          "Doctor_Id": "D002",
+          "Doctor_FName": "Jane",
+          "Doctor_LName": "Smith",
+          "Department_Id": "D002",
+          "Doctor_Phone_Number": "555-234-5678"
+        },
+        {
+          "Doctor_Id": "D003",
+          "Doctor_FName": "Alice",
+          "Doctor_LName": "Johnson",
+          "Department_Id": "D003",
+          "Doctor_Phone_Number": "555-345-6789"
+        },
+        {
+          "Doctor_Id": "D004",
+          "Doctor_FName": "Bob",
+          "Doctor_LName": "Brown",
+          "Department_Id": "D004",
+          "Doctor_Phone_Number": "555-456-7890"
+        },
+        {
+          "Doctor_Id": "D005",
+          "Doctor_FName": "Mary",
+          "Doctor_LName": "Davis",
+          "Department_Id": "D005",
+          "Doctor_Phone_Number": "555-567-8901"
+        },
+        {
+          "Doctor_Id": "D006",
+          "Doctor_FName": "Tom",
+          "Doctor_LName": "Wilson",
+          "Department_Id": "D006",
+          "Doctor_Phone_Number": "555-678-9012"
+        },
+        {
+          "Doctor_Id": "D007",
+          "Doctor_FName": "Nancy",
+          "Doctor_LName": "White",
+          "Department_Id": "D007",
+          "Doctor_Phone_Number": "555-789-0123"
+        },
+        {
+          "Doctor_Id": "D008",
+          "Doctor_FName": "George",
+          "Doctor_LName": "Clark",
+          "Department_Id": "D008",
+          "Doctor_Phone_Number": "555-890-1234"
+        },
+        {
+          "Doctor_Id": "D009",
+          "Doctor_FName": "Susan",
+          "Doctor_LName": "Lewis",
+          "Department_Id": "D009",
+          "Doctor_Phone_Number": "555-901-2345"
+        },
+        {
+          "Doctor_Id": "D010",
+          "Doctor_FName": "James",
+          "Doctor_LName": "Walker",
+          "Department_Id": "D010",
+          "Doctor_Phone_Number": "555-012-3456"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "name": "Hospital",
+      "database": "HIS",
+      "data": [
+        {
+          "Hospital_Id": "0001",
+          "Hospital_Name": "Sample Hosp",
+          "Hospital_Address": "123 Main St",
+          "Hospital_Phone_Number": "123-456-7890",
+          "state": "CA",
+          "zip_code": "90001"
+        },
+        {
+          "Hospital_Id": "0002",
+          "Hospital_Name": "General Hosp",
+          "Hospital_Address": "456 Oak Ave",
+          "Hospital_Phone_Number": "987-654-3210",
+          "state": "NY",
+          "zip_code": "10001"
+        },
+        {
+          "Hospital_Id": "0003",
+          "Hospital_Name": "City Hosp",
+          "Hospital_Address": "789 Pine St",
+          "Hospital_Phone_Number": "555-123-4567",
+          "state": "TX",
+          "zip_code": "73301"
+        },
+        {
+          "Hospital_Id": "0004",
+          "Hospital_Name": "County Hosp",
+          "Hospital_Address": "101 Maple Rd",
+          "Hospital_Phone_Number": "555-987-6543",
+          "state": "FL",
+          "zip_code": "33101"
+        },
+        {
+          "Hospital_Id": "0005",
+          "Hospital_Name": "Community Hosp",
+          "Hospital_Address": "202 Elm St",
+          "Hospital_Phone_Number": "555-678-9012",
+          "state": "IL",
+          "zip_code": "60601"
+        },
+        {
+          "Hospital_Id": "0006",
+          "Hospital_Name": "Regional Hosp",
+          "Hospital_Address": "303 Cedar St",
+          "Hospital_Phone_Number": "555-234-5678",
+          "state": "GA",
+          "zip_code": "30301"
+        },
+        {
+          "Hospital_Id": "0007",
+          "Hospital_Name": "Metro Hosp",
+          "Hospital_Address": "404 Birch Rd",
+          "Hospital_Phone_Number": "555-345-6789",
+          "state": "PA",
+          "zip_code": "19101"
+        },
+        {
+          "Hospital_Id": "0008",
+          "Hospital_Name": "Suburban Hosp",
+          "Hospital_Address": "505 Walnut St",
+          "Hospital_Phone_Number": "555-456-7890",
+          "state": "NJ",
+          "zip_code": "07001"
+        },
+        {
+          "Hospital_Id": "0009",
+          "Hospital_Name": "Urban Hosp",
+          "Hospital_Address": "606 Ash St",
+          "Hospital_Phone_Number": "555-567-8901",
+          "state": "OH",
+          "zip_code": "44101"
+        },
+        {
+          "Hospital_Id": "0010",
+          "Hospital_Name": "Rural Hosp",
+          "Hospital_Address": "707 Spruce Rd",
+          "Hospital_Phone_Number": "555-678-9012",
+          "state": "MI",
+          "zip_code": "48201"
+        },
+        {
+          "Hospital_Id": "0011",
+          "Hospital_Name": "Northside Hosp",
+          "Hospital_Address": "808 Maple Ave",
+          "Hospital_Phone_Number": "555-789-0123",
+          "state": "NC",
+          "zip_code": "27501"
+        },
+        {
+          "Hospital_Id": "0012",
+          "Hospital_Name": "Southside Hosp",
+          "Hospital_Address": "909 Hickory St",
+          "Hospital_Phone_Number": "555-890-1234",
+          "state": "VA",
+          "zip_code": "23201"
+        },
+        {
+          "Hospital_Id": "0013",
+          "Hospital_Name": "Eastside Hosp",
+          "Hospital_Address": "1010 Fir Rd",
+          "Hospital_Phone_Number": "555-901-2345",
+          "state": "CO",
+          "zip_code": "80201"
+        },
+        {
+          "Hospital_Id": "0014",
+          "Hospital_Name": "Westside Hosp",
+          "Hospital_Address": "1111 Palm St",
+          "Hospital_Phone_Number": "555-012-3456",
+          "state": "NV",
+          "zip_code": "89101"
+        },
+        {
+          "Hospital_Id": "0015",
+          "Hospital_Name": "Central Hosp",
+          "Hospital_Address": "1212 Willow Rd",
+          "Hospital_Phone_Number": "555-123-4567",
+          "state": "WA",
+          "zip_code": "98101"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "name": "patient",
+      "database": "HIS",
+      "data": [
+        {
+          "Patient_Id": "P001",
+          "Patient_FName": "John",
+          "Patient_LNmea": "Doe",
+          "Patient_Address": "123 Main St",
+          "Patient_Phone_Number": "555-123-4567",
+          "Pharmacy_Id": "PH01"
+        },
+        {
+          "Patient_Id": "P002",
+          "Patient_FName": "Jane",
+          "Patient_LNmea": "Smith",
+          "Patient_Address": "456 Oak Ave",
+          "Patient_Phone_Number": "555-234-5678",
+          "Pharmacy_Id": "PH02"
+        },
+        {
+          "Patient_Id": "P003",
+          "Patient_FName": "Alice",
+          "Patient_LNmea": "Johnson",
+          "Patient_Address": "789 Pine St",
+          "Patient_Phone_Number": "555-345-6789",
+          "Pharmacy_Id": "PH03"
+        },
+        {
+          "Patient_Id": "P004",
+          "Patient_FName": "Bob",
+          "Patient_LNmea": "Brown",
+          "Patient_Address": "101 Maple Rd",
+          "Patient_Phone_Number": "555-456-7890",
+          "Pharmacy_Id": "PH01"
+        },
+        {
+          "Patient_Id": "P005",
+          "Patient_FName": "Mary",
+          "Patient_LNmea": "Davis",
+          "Patient_Address": "202 Elm St",
+          "Patient_Phone_Number": "555-567-8901",
+          "Pharmacy_Id": "PH02"
+        },
+        {
+          "Patient_Id": "P006",
+          "Patient_FName": "Tom",
+          "Patient_LNmea": "Wilson",
+          "Patient_Address": "303 Cedar St",
+          "Patient_Phone_Number": "555-678-9012",
+          "Pharmacy_Id": "PH03"
+        },
+        {
+          "Patient_Id": "P007",
+          "Patient_FName": "Nancy",
+          "Patient_LNmea": "White",
+          "Patient_Address": "404 Birch Rd",
+          "Patient_Phone_Number": "555-789-0123",
+          "Pharmacy_Id": "PH01"
+        },
+        {
+          "Patient_Id": "P008",
+          "Patient_FName": "George",
+          "Patient_LNmea": "Clark",
+          "Patient_Address": "505 Walnut St",
+          "Patient_Phone_Number": "555-890-1234",
+          "Pharmacy_Id": "PH02"
+        },
+        {
+          "Patient_Id": "P009",
+          "Patient_FName": "Susan",
+          "Patient_LNmea": "Lewis",
+          "Patient_Address": "606 Ash St",
+          "Patient_Phone_Number": "555-901-2345",
+          "Pharmacy_Id": "PH03"
+        },
+        {
+          "Patient_Id": "P010",
+          "Patient_FName": "James",
+          "Patient_LNmea": "Walker",
+          "Patient_Address": "707 Spruce Rd",
+          "Patient_Phone_Number": "555-012-3456",
+          "Pharmacy_Id": "PH01"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "name": "Staff",
+      "database": "HIS",
+      "data": [
+        {
+          "Staff_Id": "S001",
+          "Depratment_Id": "D001",
+          "Staff_FName": "John",
+          "Staff_LName": "Doe",
+          "Staff_Address": "123 Main St",
+          "Staff_Phone_Number": "555-123-4567"
+        },
+        {
+          "Staff_Id": "S002",
+          "Depratment_Id": "D002",
+          "Staff_FName": "Jane",
+          "Staff_LName": "Smith",
+          "Staff_Address": "456 Oak Ave",
+          "Staff_Phone_Number": "555-234-5678"
+        },
+        {
+          "Staff_Id": "S003",
+          "Depratment_Id": "D003",
+          "Staff_FName": "Alice",
+          "Staff_LName": "Johnson",
+          "Staff_Address": "789 Pine St",
+          "Staff_Phone_Number": "555-345-6789"
+        },
+        {
+          "Staff_Id": "S004",
+          "Depratment_Id": "D004",
+          "Staff_FName": "Bob",
+          "Staff_LName": "Brown",
+          "Staff_Address": "101 Maple Rd",
+          "Staff_Phone_Number": "555-456-7890"
+        },
+        {
+          "Staff_Id": "S005",
+          "Depratment_Id": "D005",
+          "Staff_FName": "Mary",
+          "Staff_LName": "Davis",
+          "Staff_Address": "202 Elm St",
+          "Staff_Phone_Number": "555-567-8901"
+        },
+        {
+          "Staff_Id": "S006",
+          "Depratment_Id": "D006",
+          "Staff_FName": "Tom",
+          "Staff_LName": "Wilson",
+          "Staff_Address": "303 Cedar St",
+          "Staff_Phone_Number": "555-678-9012"
+        },
+        {
+          "Staff_Id": "S007",
+          "Depratment_Id": "D007",
+          "Staff_FName": "Nancy",
+          "Staff_LName": "White",
+          "Staff_Address": "404 Birch Rd",
+          "Staff_Phone_Number": "555-789-0123"
+        },
+        {
+          "Staff_Id": "S008",
+          "Depratment_Id": "D008",
+          "Staff_FName": "George",
+          "Staff_LName": "Clark",
+          "Staff_Address": "505 Walnut St",
+          "Staff_Phone_Number": "555-890-1234"
+        },
+        {
+          "Staff_Id": "S009",
+          "Depratment_Id": "D009",
+          "Staff_FName": "Susan",
+          "Staff_LName": "Lewis",
+          "Staff_Address": "606 Ash St",
+          "Staff_Phone_Number": "555-901-2345"
+        },
+        {
+          "Staff_Id": "S010",
+          "Depratment_Id": "D010",
+          "Staff_FName": "James",
+          "Staff_LName": "Walker",
+          "Staff_Address": "707 Spruce Rd",
+          "Staff_Phone_Number": "555-012-3456"
+        }
+      ]
+    }
+  ]

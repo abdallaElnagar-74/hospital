@@ -1,0 +1,26 @@
+.main{
+    background-color: rgba(165, 185, 237, 0.1);
+}
+.name{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+}
+.log{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(197, 43, 43, 1);
+}
+a{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(148, 146, 146, 1);
+    cursor: pointer;
+}
+.activ-link{
+    color: white;
+    background-color:rgba(19, 75, 184, 1) ;
+    padding-block: .5rem;
+    padding-inline: .5rem;
+    border-radius: .4rem;
+}

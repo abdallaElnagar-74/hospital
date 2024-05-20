@@ -1,0 +1,126 @@
+<section>
+    <div class="container-fluid">
+        <div class="top d-flex align-items-center row mt-3">
+          <div class="col-md-8">
+            <p class="m-0">Welcome Back</p>
+            <h1>Abdallah Saleh</h1>
+          </div>
+          <div class="col-md-4">
+            <form class="d-flex align-items-center" role="search">
+                <input class="form-control me-2 rounded-pill border-3 border-primary" type="search" placeholder="Search" aria-label="Search">
+                <i class="fa-solid fa-bell fa-2xl text-primary"></i>
+              </form>   
+          </div>     
+        </div>
+        <div class="cobe row align-items-center p-2 rounded-4 mt-3">
+         <div class="left col-md-6">
+            <h1>
+                Manage Your Healthcare Journey
+            </h1>
+            <p>
+                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
+            </p>
+            <button class="btn bg-white text-success rounded-4" routerLink="/appoint" type="button">Book Appointment</button>
+         </div>
+         <div class="col-md-6 d-flex justify-content-end">
+            <img src="./assets/images/alldocs.svg" alt="">
+         </div>
+        </div>
+        <div class="row mt-3 g-3">
+            <div class="col-md-3">
+                <div class="cardd d-flex align-items-center shadow p-4 rounded-2">
+                    <div class="p-4 ikon d-flex justify-content-center align-items-center rounded-circle text-danger"><i><i class="fa-solid fa-calendar-days fa-2x"></i></i></div>
+                <p class="ms-2">Total Bookings</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cardd d-flex align-items-center shadow p-4 rounded-2">
+                    <div class="p-4 ikon1 d-flex justify-content-center align-items-center rounded-circle text-danger"><i class="fa-regular fa-calendar-check fa-2x"></i></div>
+                <p class="ms-2">Booking Success</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cardd d-flex align-items-center shadow p-4 rounded-2">
+                    <div class="p-4 ikon2 d-flex justify-content-center align-items-center rounded-circle text-danger">
+                        <i class="fa-regular fa-calendar-xmark fa-2x"></i></div>
+                <p class="ms-2">Booking Cancel</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cardd d-flex align-items-center shadow p-4 rounded-2">
+                    <div class="p-4 ikon3 d-flex justify-content-center align-items-center rounded-circle text-danger"></div>
+                <p class="ms-2">Paid Amount</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <div class="appoint">
+                    <div class="row mt-4" >
+                        <div class="col-md-8"><h2>Uncoming Appointment</h2></div>
+                        <div class="col-md-4 d-flex justify-content-end">
+                            <select class="form-select rounded-pill" aria-label="Default select example">
+                                <option selected>Latest Appointment</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <table class="table text-center shadow ">
+                                <thead class="border-2">
+                                    <th class="py-2">Profile</th>
+                                    <th class="py-2">Date</th>
+                                    <th class="py-2">Time</th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of data" class="border-2">
+                                        <td class="d-flex align-items-center"><img src="./assets/images/nigdoc.svg" class="me-1" alt="">
+                                            <p class="dname">Dr.{{item.Doctor_FName+' '+item.Doctor_LName}}</p>
+                                        </td>
+                                        <td class="">{{item.date}}</td>
+                                        <td class="">{{item.time}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="avail p-2 shadow rounded-2 mt-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 d-flex mb-2">
+                                        <h1>Available Doctors :</h1>
+                                    </div>
+                           <div class="col-md-12">
+                            <owl-carousel-o [options]="customOptions">
+                                <ng-container *ngFor="let slide of data">
+                                    <ng-template carouselSlide>
+                                      <div class="row align-items-center">
+                                        <div class="col-md-4"><img src="./assets/images/nigdoc.svg" class="w-75"></div>
+                                        <div class="col-md-8">
+                                            <p class="fw-semibold m-0">Dr.{{slide.Doctor_FName+' '+slide.Doctor_LName}}</p>
+                                            <p class="m-0">Dentist</p>
+                                            <p>Rating : 7.5<i class="fa-solid fa-star text-warning"></i></p>
+                                        </div>
+                                      </div>
+                                    </ng-template>
+                                  </ng-container>
+                              
+                              </owl-carousel-o>
+                            
+                              
+                           </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <mat-card class="demo-inline-calendar-card">
+                    <mat-calendar [(selected)]="selected"></mat-calendar>
+                  </mat-card>
+                  <p class="mt-1">Selected date: {{selected}}</p>
+            </div>
+        </div>
+    </div>
+</section>
